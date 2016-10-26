@@ -1,0 +1,33 @@
+{
+  "name": "site-performance-optimization",
+  "version": "0.0.1",
+  "description": "Example of site performance optimization",
+  "main": "app.js",
+  "dependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "phantomas": "^1.17.0"
+  },
+  "scripts": {
+    "start": "http-server -p 3000",
+    "test": "phantomas http://localhost:3000/dist/ --modules=Metrics --runs 5"
+  },
+  "author": "Christian Lepson",
+  "license": "ISC"
+}
